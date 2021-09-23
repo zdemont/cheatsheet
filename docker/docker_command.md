@@ -2,7 +2,12 @@ Base docker commandes
 
 List docker images
 ```
-docker image ls
+docker images ls
+```
+
+Remove docker images
+```
+docker image rm 
 ```
 
 List docker container
@@ -26,3 +31,4 @@ Run a docker image in a container
 ````
 docker run 
 ````
+
