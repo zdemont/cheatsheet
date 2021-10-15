@@ -12,5 +12,5 @@ List columns name
 SELECT 
     *
 FROM {your_dataset}.INFORMATION_SCHEMA.COLUMNS
-WHERE {table_name}
+WHERE table_name = {table_name}
 ```
