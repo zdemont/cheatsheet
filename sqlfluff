@@ -1,0 +1,27 @@
+Installation de SQLFluff 
+```bash
+  pip3 install sqlfluff
+```
+
+Verication
+```bash
+  sqlfluff lint [folder_path]
+```
+
+Format, besoin de `.sqlfluff` 
+```bash
+  sqlfluff fix [folder_path] 
+```
+
+Configuration du fichier `.sqlfluff`
+```
+  [sqlfluff]
+  verbose = 1
+  exclude_rules = L014, L016
+  dialect = bigquery
+  [sqlfluff:rules:L014]  # Unquoted identifiers
+  capitalisation_policy = capitalise
+  unquoted_identifiers_policy = all
+  indented_joins = True
+
+```
